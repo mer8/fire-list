@@ -1,0 +1,32 @@
+<div id="credentials">
+  <h3>Very Important Things!</h3>
+
+
+</div>
+<div id="list">
+
+  <ul>
+    <li ng-repeat="item in items">
+      <input type="checkbox" ng-model="item.done">
+      {{ item.name }} {{ item.date }}
+
+
+      <!-- ng-true-value="closed" ng-false-value="open" ng-click="closeIssue(issue)">
+      <div class="title" ng-bind="issue.title"></div> -->
+     
+    </li>
+  </ul>
+
+
+
+<div id="add-item">
+
+
+<form>
+<input type="text" placeholder="New item" autofocus ng-model="newItem">
+<input type="date" ng-model="date">
+ <input type="submit" value="Add item" ng-click="addItem()">
+ </form>
+
+  </div>
+</div>
